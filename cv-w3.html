@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Mi CV</title>
+  </head>
+  <body class="w3-black">
+
+    <!-- Nav movil hamburguesa -->
+    <nav id="menu-movil" class="w3-bar-block w3-text-cyan w3-hide w3-hide-large w3-hide-medium">
+      <a href="#inicio"      class="w3-bar-item w3-button w3-text-cyan">Inicio</a>
+      <a href="#proyectos"   class="w3-bar-item w3-button w3-text-cyan">Proyectos</a>
+      <a href="#sobre-mi"    class="w3-bar-item w3-button w3-text-cyan">Sobre_Mi</a>
+      <a href="#experiencia" class="w3-bar-item w3-button w3-text-cyan">Experiencia</a>
+      <a href="#contacto"    class="w3-bar-item w3-button w3-text-cyan">Contacto</a>
+    </nav>
+
+    <!-- Nav principal -->
+    <nav class="w3-bar w3-teal">
+      <a href="#inicio"      class="w3-bar-item w3-button w3-text-light-gray w3-hide-small">Inicio</a>
+      <a href="#proyectos"   class="w3-bar-item w3-button w3-text-light-gray w3-hide-small">Proyectos</a>
+      <a href="#sobre-mi"    class="w3-bar-item w3-button w3-text-light-gray w3-hide-small">Sobre_Mi</a>
+      <a href="#experiencia" class="w3-bar-item w3-button w3-text-light-gray w3-hide-small">Experiencia</a>
+      <a href="#contacto"    class="w3-bar-item w3-button w3-text-light-gray w3-hide-small">Contacto</a>
+      <!-- Boton hamburguesa movil -->
+      <a href="javascript:void(0)"
+         class="w3-bar-item w3-button w3-right w3-text-light-grey w3-hide-large w3-hide-medium"
+         onclick="toggleMenu()">&#9776;</a>
+    </nav>
+
+    <!-- Seccion inicio -->
+    <section id="inicio" class="w3-center w3-padding-64 w3-animate-opacity">
+      <div class="w3-container">
+        <p class="w3-text-cyan">> INITIALIZING...</p>
+        <h1 class="w3-text-teal">Dylan Coca Beltran</h1>
+        <h2 class="w3-text-teal">Estudiante Informática — Desarrollo de Software</h2>
+        <p class="w3-text-light-grey">
+          Ingeniero informático apasionado por el desarrollo de software y la resolucion de problemas.
+          Me especializo en construir soluciones eficientes, escalables y con impacto real.
+        </p>
+        <div class="w3-margin-top">
+          <a href="#proyectos" class="w3-button w3-border w3-border-cyan w3-text-cyan w3-margin">Ver proyectos</a>
+          <a href="https://github.com/DCBTV56" class="w3-button w3-teal w3-margin">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion proyectos -->
+    <section id="proyectos" class="w3-container w3-padding-64">
+      <h2 class="w3-center w3-text-teal">Proyectos</h2>
+      <div class="w3-row-padding">
+        <div class="w3-card w3-border w3-border-teal w3-margin-bottom">
+          <div class="w3-row-padding">
+            <div class="w3-col m4 w3-center w3-padding-bottom">
+              <img src="project1.png" class="w3-round" alt="SecurePass Analyzer" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="w3-col m8">
+              <h3 class="w3-text-green">SecurePass Analyzer</h3>
+              <ul class="w3-ul">
+                <li>Herramienta web para analizar la fortaleza de contraseñas en tiempo real.</li>
+                <li>Retos: implementacion de algoritmo de entropía e integracion con HaveIBeenPwned API.</li>
+                <li>Tecnologías: Python, JavaScript, REST API, SHA-1 hashing.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion sobre mí -->
+    <section id="sobre-mi" class="w3-container w3-padding-64">
+      <h2 class="w3-center w3-text-teal">Sobre_Mi</h2>
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col m4 w3-center w3-padding-bottom">
+          <img src="perfil.png"
+               alt="Foto de perfil"
+               class="w3-circle"
+               style="width:160px;height:160px;object-fit:cover;">
+        </div>
+        <div class="w3-col m8">
+          <p class="w3-text-light-grey">
+            Estudiante de Ingeniería Informática apasionado por el desarrollo de software.
+            Me interesa construir soluciones eficientes y seguras, con enfoque en buenas
+            prácticas de programacion. Actualmente explorando el mundo del desarrollo web
+            y la seguridad informática, buscando aplicar mis conocimientos en proyectos
+            reales con impacto.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion experiencia -->
+    <section id="experiencia" class="w3-container w3-padding-64">
+      <h2 class="w3-center w3-text-teal">Experiencia</h2>
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col m3 w3-padding-bottom">
+          <span class="w3-tag w3-cyan w3-margin-bottom" style="display:inline-block">Enero 2023</span><br>
+          <span class="w3-tag w3-cyan" style="display:inline-block">Diciembre 2026</span>
+        </div>
+        <div class="w3-col m9">
+          <h3 class="w3-text-grey">Estudiante de Ingeniería Informática</h3>
+          <ul class="w3-ul w3-text-light-grey">
+            <li>Universidad — Presencial</li>
+            <li>Formacion en desarrollo de software, estructuras de datos, redes y seguridad informática.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion contacto -->
+    <section id="contacto" class="w3-container w3-padding-64 w3-center">
+      <h2 class="w3-text-teal">Contacto</h2>
+      <p class="w3-large w3-text-cyan">GOOD BUG</p>
+      <p>
+        <a href="mailto:lonkhatyl@gmail.com" class="w3-button w3-border w3-border-cyan w3-text-cyan w3-margin-top">
+          lonkhatyl@gmail.com
+        </a>
+      </p>
+      <div class="w3-margin-top">
+        <a href="https://github.com/DCBTV56" class="w3-button w3-border w3-border-teal w3-text-teal w3-margin">GitHub</a>
+        <a href="https://linkedin.com/in/usuario" class="w3-button w3-border w3-border-teal w3-text-teal w3-margin">LinkedIn</a>
+        <a href="document.pdf" class="w3-button w3-border w3-border-teal w3-text-teal w3-margin">Descargar CV</a>
+      </div>
+      <div class="w3-margin-top">
+        <a href="https://instagram.com/usuario" class="w3-button w3-teal w3-margin">Instagram</a>
+        <a href="https://twitter.com/usuario" class="w3-button w3-teal w3-margin">Twitter</a>
+        <a href="https://youtube.com/usuario" class="w3-button w3-teal w3-margin">YouTube</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-text-teal w3-center w3-padding-16">
+      <p>Dylan Coca Beltran &copy; 2026</p>
+    </footer>
+
+    <!-- JS hamburguesa -->
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu-movil");
+        if (menu.className.indexOf("w3-show") === -1) {
+          menu.className += " w3-show";
+        } else {
+          menu.className = menu.className.replace(" w3-show", "");
+        }
+      }
+
+      document.querySelectorAll("#menu-movil a").forEach(function(link) {
+        link.addEventListener("click", function() {
+          var menu = document.getElementById("menu-movil");
+          menu.className = menu.className.replace(" w3-show", "");
+        });
+      });
+    </script>
+
+  </body>
+</html>
